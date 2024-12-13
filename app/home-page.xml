@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <GridLayout rows="auto, *" class="p-4">
+        <Label text="Guide de la ville de N'Djamena" class="text-2xl font-bold text-center mb-4" row="0"/>
+        <ScrollView row="1">
+            <StackLayout>
+                <Button text="Agence Immobilière" tap="{{ onImmobilierTap }}" class="btn btn-primary m-2 p-4"/>
+                <Button text="Boutique Mobile" tap="{{ onMobileTap }}" class="btn btn-primary m-2 p-4"/>
+                <Button text="Parc Auto" tap="{{ onAutoTap }}" class="btn btn-primary m-2 p-4"/>
+                <Button text="Carte de la ville" tap="{{ onMapTap }}" class="btn btn-primary m-2 p-4"/>
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+</Page>

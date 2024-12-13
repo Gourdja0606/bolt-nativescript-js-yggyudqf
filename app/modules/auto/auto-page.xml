@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Parc Auto">
+        <NavigationButton text="Retour" android.systemIcon="ic_menu_back"/>
+    </ActionBar>
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Véhicules disponibles" class="text-xl font-bold mb-4"/>
+            <ListView items="{{ vehicles }}">
+                <ListView.itemTemplate>
+                    <StackLayout class="p-2 border-b border-gray-200">
+                        <Label text="{{ model }}" class="text-lg font-semibold"/>
+                        <Label text="{{ brand }}" class="text-gray-600"/>
+                        <Label text="{{ year }}" class="text-gray-500"/>
+                        <Label text="{{ price }}" class="text-green-600"/>
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</Page>

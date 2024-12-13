@@ -1,0 +1,5 @@
+<Frame defaultPage="home-page">
+  <Frame.actionBar>
+    <ActionBar title="N'Djamena City Guide" />
+  </Frame.actionBar>
+</Frame>

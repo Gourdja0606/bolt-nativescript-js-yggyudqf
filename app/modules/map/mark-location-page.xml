@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Marquer un lieu">
+        <NavigationButton text="Retour" android.systemIcon="ic_menu_back"/>
+    </ActionBar>
+    <StackLayout class="p-4">
+        <Label text="Détails du lieu" class="text-xl font-bold mb-4"/>
+        
+        <Label text="Nom du lieu" class="font-medium"/>
+        <TextField text="{{ locationName }}" hint="Ex: Ma maison, Mon bureau" class="mb-2"/>
+        
+        <Label text="Description" class="font-medium"/>
+        <TextView text="{{ description }}" hint="Description du lieu" class="mb-2" height="100"/>
+        
+        <Label text="Catégorie" class="font-medium"/>
+        <ListPicker items="{{ categories }}" selectedIndex="{{ selectedCategoryIndex }}" 
+                    class="mb-4"/>
+        
+        <Button text="Enregistrer le marqueur" tap="{{ onSaveMarker }}" 
+                class="btn btn-primary"/>
+    </StackLayout>
+</Page>
